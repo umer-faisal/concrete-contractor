@@ -29,388 +29,529 @@
 
   <body class="w-full overflow-x-hidden">
     
-<header>
-  <nav data-state="inactive" class="fixed z-50 w-full px-0 group">
-    <div class="w-full bg-white border-b-4 border-[#12294b] shadow-xl transition-all duration-300">
-      <div class="mx-auto max-w-[1600px] px-6 lg:px-12">
-        <div class="relative flex flex-wrap items-center justify-between gap-6 py-4 lg:gap-0 lg:py-5">
-        <div class="flex w-full justify-between lg:w-auto">
-          <a href="/" class="flex items-center gap-2 group">
-            <svg class="w-6 h-6 text-foreground shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
-            </svg>
-            <span class="text-lg font-bold text-foreground group-hover:opacity-80 transition-opacity max-w-[170px] leading-none">Premier Concrete Contractors</span>
-          </a>
-          <button
-            id="navbarToggler"
-            aria-label="Open Menu"
-            class="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu in-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0 m-auto size-6 duration-200" aria-hidden="true">
-              <path d="M4 12h16"></path>
-              <path d="M4 18h16"></path>
-              <path d="M4 6h16"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" aria-hidden="true">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-          </button>
-        </div>
-        
-        <!-- Desktop Center Navigation -->
-        <div class="absolute inset-0 m-auto hidden size-fit lg:block">
-          <ul class="flex gap-8 text-md">
-            <li>
-              <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="/">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="about.html">
-                <span>About</span>
-              </a>
-            </li>
-            
-            <li class="relative group/services">
-              <a class="text-muted-foreground hover:text-accent-foreground flex items-center gap-1 duration-150 cursor-pointer" href="javascript:void(0)">
-                <span>Services</span>
-                <svg class="w-4 h-4 transition-transform duration-200 group-hover/services:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+  <header>
+    <nav data-state="inactive" class="fixed z-50 w-full px-0 group">
+      <div class="w-full bg-[#f0f7ff] border-b-0 shadow-xl transition-all duration-300">
+        <div class="mx-auto max-w-[1600px] px-6 lg:px-12">
+          <div class="relative flex flex-wrap items-center justify-between gap-6 py-4 lg:gap-0 lg:py-5">
+            <div class="flex w-full justify-between lg:w-auto">
+              <a href="/" class="flex items-center gap-2 group">
+                <svg class="w-6 h-6 text-foreground shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
+                <span
+                  class="text-lg font-bold text-foreground group-hover:opacity-80 transition-opacity max-w-[170px] leading-none">Premier
+                  Concrete  Contractors</span>
               </a>
-              <!-- Mega Menu for Services -->
-              <div class="invisible absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[600px] rounded-lg border bg-card p-6 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover/services:visible group-hover/services:opacity-100 group-hover/services:translate-y-0 translate-y-2 z-50">
-                <div class="grid grid-cols-2 gap-4 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
-                  
-                  <a href="services/residential-concrete-driveways.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Residential Concrete Driveways</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Transform your home's curb appeal with our expertly installed residential concrete driveways. We use high-quality materials to create durable and attractive driveways that stand the test of time.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/commercial-concrete-driveways.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Commercial Concrete Driveways</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Our commercial concrete driveways are designed to handle heavy traffic while providing a polished look for your business. Trust us for reliable installations that enhance your business's image.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-patios.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Patios</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Create an inviting outdoor space with our custom concrete patios. Whether you want a simple design or intricate patterns, we can deliver a patio that complements your lifestyle.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-sidewalks.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Sidewalks</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Ensure safety and accessibility with our expertly constructed concrete sidewalks. We follow local regulations and standards to create walkways that are both functional and aesthetically pleasing.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-slabs.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Slabs</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Our concrete slab services provide a solid foundation for any structure. Whether it's for a garage or a new home, we ensure that each slab is poured with precision and care.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-foundations.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Foundations</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">A strong foundation is crucial for any building. Our experienced team specializes in concrete foundations that offer stability and longevity, ensuring your structure's integrity.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-stamping.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Stamping</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Enhance the look of your concrete surfaces with our decorative concrete stamping services. We can create beautiful patterns that mimic the look of stone, brick, or tile.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-resurfacing.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Resurfacing</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Revitalize your existing concrete surfaces with our resurfacing services. We can restore old, worn-out concrete to like-new condition, extending its lifespan and improving appearance.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-repair-and-restoration.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Repair and Restoration</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Our concrete repair specialists are equipped to handle cracks, chips, and other damage. We use industry-leading techniques to restore your concrete surfaces effectively.</div>
-                    </div>
-                  </a>
-                  
-                  <a href="services/concrete-curbing.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Concrete Curbing</div>
-                      <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Add a decorative touch to your landscaping with our concrete curbing services. We design and install curbs that not only enhance beauty but also provide practical landscaping solutions.</div>
-                    </div>
-                  </a>
-                  
-                </div>
-              </div>
-            </li>
-            
-            
-            <li class="relative group/locations">
-              <a class="text-muted-foreground hover:text-accent-foreground flex items-center gap-1 duration-150 cursor-pointer" href="javascript:void(0)">
-                <span>Locations</span>
-                <svg class="w-4 h-4 transition-transform duration-200 group-hover/locations:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              <button id="navbarToggler" aria-label="Open Menu"
+                class="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-menu in-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0 m-auto size-6 duration-200"
+                  aria-hidden="true">
+                  <path d="M4 12h16"></path>
+                  <path d="M4 18h16"></path>
+                  <path d="M4 6h16"></path>
                 </svg>
-              </a>
-              <!-- Mega Menu for Locations -->
-              <div class="invisible absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[600px] rounded-lg border bg-card p-6 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover/locations:visible group-hover/locations:opacity-100 group-hover/locations:translate-y-0 translate-y-2 z-50">
-                <div class="grid grid-cols-2 gap-4 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
-                  
-                  <a href="locations/concrete-contractors-in-craig-ranch.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Craig Ranch</div>
-                      <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
-                    </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-x group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200"
+                  aria-hidden="true">
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Desktop Center Navigation -->
+            <div class="absolute inset-0 m-auto hidden size-fit  lg:block">
+              <ul class="flex gap-8 text-md">
+                <li>
+                  <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="/">
+                    <span>Home</span>
                   </a>
-                  
-                  <a href="locations/concrete-contractors-in-eldorado.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Eldorado</div>
-                      <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
-                    </div>
+                </li>
+                <li>
+                  <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="about.html">
+                    <span>About</span>
                   </a>
-                  
-                  <a href="locations/concrete-contractors-in-historic-downtown-mckinney.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                      </svg>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Historic Downtown McKinney</div>
-                      <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
-                    </div>
+                </li>
+
+                <li class="relative group/services">
+                  <a class="text-muted-foreground hover:text-accent-foreground flex items-center gap-1 duration-150 cursor-pointer"
+                    href="javascript:void(0)">
+                    <span>Services</span>
+                    <svg class="w-4 h-4 transition-transform duration-200 group-hover/services:rotate-180" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
                   </a>
-                  
-                  <a href="locations/concrete-contractors-in-mckinney-ranch.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                      </svg>
+                  <!-- Mega Menu for Services -->
+                  <div
+                    class="invisible absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[600px] rounded-lg border border-slate-300 bg-[#f0f7ff] p-6 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover/services:visible group-hover/services:opacity-100 group-hover/services:translate-y-0 translate-y-2 z-50">
+                    <div
+                      class="grid grid-cols-2 gap-4 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
+
+                      <a href="services/residential-concrete-driveways.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Residential Concrete Driveways</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Transform your home's curb appeal
+                            with our expertly installed residential concrete driveways. We use high-quality materials to
+                            create durable and attractive driveways that stand the test of time.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/commercial-concrete-driveways.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Commercial Concrete Driveways</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Our commercial concrete driveways
+                            are designed to handle heavy traffic while providing a polished look for your business.
+                            Trust us for reliable installations that enhance your business's image.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-patios.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Patios</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Create an inviting outdoor space
+                            with our custom concrete patios. Whether you want a simple design or intricate patterns, we
+                            can deliver a patio that complements your lifestyle.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-sidewalks.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Sidewalks</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Ensure safety and accessibility
+                            with our expertly constructed concrete sidewalks. We follow local regulations and standards
+                            to create walkways that are both functional and aesthetically pleasing.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-slabs.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Slabs</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Our concrete slab services
+                            provide a solid foundation for any structure. Whether it's for a garage or a new home, we
+                            ensure that each slab is poured with precision and care.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-foundations.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Foundations</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">A strong foundation is crucial
+                            for any building. Our experienced team specializes in concrete foundations that offer
+                            stability and longevity, ensuring your structure's integrity.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-stamping.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Stamping</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Enhance the look of your concrete
+                            surfaces with our decorative concrete stamping services. We can create beautiful patterns
+                            that mimic the look of stone, brick, or tile.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-resurfacing.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Resurfacing</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Revitalize your existing concrete
+                            surfaces with our resurfacing services. We can restore old, worn-out concrete to like-new
+                            condition, extending its lifespan and improving appearance.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-repair-and-restoration.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Repair and Restoration</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Our concrete repair specialists
+                            are equipped to handle cracks, chips, and other damage. We use industry-leading techniques
+                            to restore your concrete surfaces effectively.</div>
+                        </div>
+                      </a>
+
+                      <a href="services/concrete-curbing.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Concrete Curbing</div>
+                          <div class="text-xs text-muted-foreground mt-1 line-clamp-2">Add a decorative touch to your
+                            landscaping with our concrete curbing services. We design and install curbs that not only
+                            enhance beauty but also provide practical landscaping solutions.</div>
+                        </div>
+                      </a>
+
                     </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">McKinney Ranch</div>
-                      <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
-                    </div>
+                  </div>
+                </li>
+
+
+                <li class="relative group/locations">
+                  <a class="text-muted-foreground hover:text-accent-foreground flex items-center gap-1 duration-150 cursor-pointer"
+                    href="javascript:void(0)">
+                    <span>Locations</span>
+                    <svg class="w-4 h-4 transition-transform duration-200 group-hover/locations:rotate-180" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
                   </a>
-                  
-                  <a href="locations/concrete-contractors-in-stonebridge-ranch.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
-                    <div class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
-                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  <!-- Mega Menu for Locations -->
+                  <div
+                    class="invisible absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[600px] rounded-lg border border-slate-300 bg-[#f0f7ff] p-6 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover/locations:visible group-hover/locations:opacity-100 group-hover/locations:translate-y-0 translate-y-2 z-50">
+                    <div
+                      class="grid grid-cols-2 gap-4 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
+
+                      <a href="locations/concrete-contractors-in-craig-ranch.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Craig Ranch</div>
+                          <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
+                        </div>
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-eldorado.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Eldorado</div>
+                          <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
+                        </div>
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-historic-downtown-mckinney.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Historic Downtown McKinney</div>
+                          <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
+                        </div>
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-mckinney-ranch.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            McKinney Ranch</div>
+                          <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
+                        </div>
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-stonebridge-ranch.html"
+                        class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
+                        <div
+                          class="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover/item:bg-primary/20 transition-colors">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div
+                            class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">
+                            Stonebridge Ranch</div>
+                          <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Mobile Menu & CTA Button -->
+            <div
+              class="bg-background group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+              <!-- Mobile Navigation -->
+              <div class="lg:hidden">
+                <ul class="space-y-3 text-base">
+                  <li>
+                    <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="/">
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="about.html">
+                      <span>About</span>
+                    </a>
+                  </li>
+
+                  <li class="border-b border-border pb-2">
+                    <button
+                      class="mobile-accordion-toggle flex items-center justify-between w-full text-base font-medium text-foreground hover:text-primary transition-colors"
+                      data-target="servicesAccordion">
+                      <span>Services</span>
+                      <svg class="mobile-accordion-icon w-5 h-5 transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                       </svg>
+                    </button>
+                    <div id="servicesAccordion"
+                      class="mobile-accordion-content hidden mt-4 space-y-3 pl-4 max-h-[170px] overflow-y-auto">
+
+                      <a href="services/residential-concrete-driveways.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Residential Concrete Driveways
+                      </a>
+
+                      <a href="services/commercial-concrete-driveways.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Commercial Concrete Driveways
+                      </a>
+
+                      <a href="services/concrete-patios.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Patios
+                      </a>
+
+                      <a href="services/concrete-sidewalks.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Sidewalks
+                      </a>
+
+                      <a href="services/concrete-slabs.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Slabs
+                      </a>
+
+                      <a href="services/concrete-foundations.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Foundations
+                      </a>
+
+                      <a href="services/concrete-stamping.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Stamping
+                      </a>
+
+                      <a href="services/concrete-resurfacing.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Resurfacing
+                      </a>
+
+                      <a href="services/concrete-repair-and-restoration.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Repair and Restoration
+                      </a>
+
+                      <a href="services/concrete-curbing.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Concrete Curbing
+                      </a>
+
                     </div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-foreground group-hover/item:text-primary transition-colors">Stonebridge Ranch</div>
-                      <div class="text-xs text-muted-foreground mt-1">Visit our location</div>
+                  </li>
+
+
+                  <li class="border-b border-border pb-2">
+                    <button
+                      class="mobile-accordion-toggle flex items-center justify-between w-full text-base font-medium text-foreground hover:text-primary transition-colors"
+                      data-target="locationsAccordion">
+                      <span>Locations</span>
+                      <svg class="mobile-accordion-icon w-5 h-5 transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div id="locationsAccordion"
+                      class="mobile-accordion-content hidden mt-4 space-y-3 pl-4 max-h-[170px] overflow-y-auto">
+
+                      <a href="locations/concrete-contractors-in-craig-ranch.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Craig Ranch
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-eldorado.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Eldorado
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-historic-downtown-mckinney.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Historic Downtown McKinney
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-mckinney-ranch.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        McKinney Ranch
+                      </a>
+
+                      <a href="locations/concrete-contractors-in-stonebridge-ranch.html"
+                        class="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                        Stonebridge Ranch
+                      </a>
+
                     </div>
-                  </a>
-                  
-                </div>
+                  </li>
+
+                  <li class="border-b border-border pb-2">
+                    <a class="text-muted-foreground hover:text-accent-foreground block duration-150"
+                      href="contact.html">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </li>
-            
-          </ul>
-        </div>
-        
-        <!-- Mobile Menu & CTA Button -->
-        <div class="bg-background group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-          <!-- Mobile Navigation -->
-          <div class="lg:hidden">
-            <ul class="space-y-3 text-base">
-              <li>
-                <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="/">
-                  <span>Home</span>
+
+              <!-- CTA Button -->
+              <div class="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                <a data-slot="button"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-medium transition-all disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive cursor-pointer bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2"
+                  href="contact.html">
+                  <span>Contact Us</span>
                 </a>
-              </li>
-              <li>
-                <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="about.html">
-                  <span>About</span>
-                </a>
-              </li>
-              
-              <li class="border-b border-border pb-2">
-                <button class="mobile-accordion-toggle flex items-center justify-between w-full text-base font-medium text-foreground hover:text-primary transition-colors" data-target="servicesAccordion">
-                  <span>Services</span>
-                  <svg class="mobile-accordion-icon w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <div id="servicesAccordion" class="mobile-accordion-content hidden mt-4 space-y-3 pl-4 max-h-[170px] overflow-y-auto">
-                  
-                  <a href="services/residential-concrete-driveways.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Residential Concrete Driveways
-                  </a>
-                  
-                  <a href="services/commercial-concrete-driveways.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Commercial Concrete Driveways
-                  </a>
-                  
-                  <a href="services/concrete-patios.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Patios
-                  </a>
-                  
-                  <a href="services/concrete-sidewalks.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Sidewalks
-                  </a>
-                  
-                  <a href="services/concrete-slabs.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Slabs
-                  </a>
-                  
-                  <a href="services/concrete-foundations.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Foundations
-                  </a>
-                  
-                  <a href="services/concrete-stamping.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Stamping
-                  </a>
-                  
-                  <a href="services/concrete-resurfacing.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Resurfacing
-                  </a>
-                  
-                  <a href="services/concrete-repair-and-restoration.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Repair and Restoration
-                  </a>
-                  
-                  <a href="services/concrete-curbing.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Concrete Curbing
-                  </a>
-                  
-                </div>
-              </li>
-              
-              
-              <li class="border-b border-border pb-2">
-                <button class="mobile-accordion-toggle flex items-center justify-between w-full text-base font-medium text-foreground hover:text-primary transition-colors" data-target="locationsAccordion">
-                  <span>Locations</span>
-                  <svg class="mobile-accordion-icon w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <div id="locationsAccordion" class="mobile-accordion-content hidden mt-4 space-y-3 pl-4 max-h-[170px] overflow-y-auto">
-                  
-                  <a href="locations/concrete-contractors-in-craig-ranch.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Craig Ranch
-                  </a>
-                  
-                  <a href="locations/concrete-contractors-in-eldorado.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Eldorado
-                  </a>
-                  
-                  <a href="locations/concrete-contractors-in-historic-downtown-mckinney.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Historic Downtown McKinney
-                  </a>
-                  
-                  <a href="locations/concrete-contractors-in-mckinney-ranch.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    McKinney Ranch
-                  </a>
-                  
-                  <a href="locations/concrete-contractors-in-stonebridge-ranch.html" class="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Stonebridge Ranch
-                  </a>
-                  
-                </div>
-              </li>
-              
-              <li class="border-b border-border pb-2">
-                <a class="text-muted-foreground hover:text-accent-foreground block duration-150" href="contact.html">
-                  <span>Contact</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <!-- CTA Button -->
-          <div class="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-            <a data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-medium transition-all disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive cursor-pointer bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2" href="contact.html">
-              <span>Contact Us</span>
-            </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
 
     <main>
