@@ -1,0 +1,95 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/locations",
+      "destination": "/locations.html",
+      "permanent": true
+    },
+    {
+      "source": "/locations/",
+      "destination": "/locations.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy/",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug.html/",
+      "destination": "/services/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug([^\\.]+)",
+      "destination": "/services/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug([^\\.]+)/",
+      "destination": "/services/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/locations/:slug.html/",
+      "destination": "/locations/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/locations/:slug([^\\.]+)",
+      "destination": "/locations/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/locations/:slug([^\\.]+)/",
+      "destination": "/locations/:slug.html",
+      "permanent": true
+    }
+  ]
+}

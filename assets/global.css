@@ -1,0 +1,88 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #12294b; /* Using your dark blue for text */
+  --card: #ffffff;
+  --card-foreground: #12294b;
+  --popover: #ffffff;
+  --popover-foreground: #12294b;
+  --primary: #12294b; /* Your requested Deep Navy */
+  --primary-foreground: #ffffff;
+  --secondary: #2d74dd; /* Vibrant Blue matching McKinney Ranch theme */
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --accent: #2d74dd; /* Vibrant Blue accent matching McKinney Ranch theme */
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #94a3b8;
+  --ring: #2d74dd;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #12294b;
+  --foreground: #ffffff;
+  --card: #1e293b;
+  --card-foreground: #ffffff;
+  --popover: #1e293b;
+  --popover-foreground: #ffffff;
+  --primary: #2d74dd;
+  --primary-foreground: #ffffff;
+  --secondary: #12294b;
+  --secondary-foreground: #ffffff;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #2d74dd;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #334155;
+  --input: #334155;
+  --ring: #2d74dd;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  /* Solid Section Variations using your shades */
+  --color-section-bg-1: #f8fafc;
+  --color-section-bg-2: #12294b;
+  --color-section-bg-3: #f8fafc;
+  --color-section-bg-4: #1e293b;
+  --color-section-bg-5: #ffffff;
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
